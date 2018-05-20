@@ -9,12 +9,13 @@
 
 class Circle {
 public:
-    void setXY(int x, int y);
+    void setCenter(Point &point);
     void setR(int r);
     bool contain(Point point);
+    bool isIntersection(Circle &circle);
+    ~Circle();
 private:
-    int x0;
-    int y0;
+    Point center;
     int m_r;
 };
 

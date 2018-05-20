@@ -11,6 +11,7 @@ public:
     void setXY(int x, int y);
     int getX();
     int getY();
+    double distance(Point &another);
 private:
     int m_x;
     int m_y;
